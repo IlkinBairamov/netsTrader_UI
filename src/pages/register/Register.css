@@ -1,0 +1,147 @@
+.loginMap {
+  width: 387.43px;
+}
+
+.Net {
+  width: 171px;
+  height: 31px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: -0.0264em;
+  margin-right: 10px;
+}
+
+.Trade {
+  font-weight: 300;
+}
+
+.Register {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.2px;
+  color: #000000;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.Register span {
+  color: #D85A54;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.Register span:hover {
+  color: #c04740;
+}
+
+.register-next {
+  margin-bottom: 0;
+}
+
+.left-side .next-input {
+  margin-bottom: 15px;
+}
+
+.left-side input {
+  background: #F8F8F8;
+  border: 1px solid #F1F1F1;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: #999999;
+}
+
+.left-side input:focus-visible {
+  outline: 1px solid #999999;
+}
+
+.left-side select {
+  display: block;
+  width: 185.2px;
+  background: #F8F8F8;
+  border: 1px solid #F1F1F1;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: #999999;
+}
+
+.left-side select:focus-visible {
+  outline: 1px solid #999999;
+}
+
+.left-side label {
+  display: block;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -0.96px;
+  color: #999999;
+}
+
+.button {
+  width: 180px !important;
+  height: 40px;
+  text-align: center;
+  background: #D85A54;
+  border: 1px solid;
+  border-radius: 10px;
+  color: white !important;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -1.2px;
+  -webkit-transition: 1.6s;
+  transition: 1.6s;
+}
+
+.button:hover {
+  background: #c04740;
+}
+
+.nese {
+  margin-right: 310px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.svg {
+  margin-left: 50px;
+}
+
+#textarea {
+  background: #F8F8F8;
+  border: 1px solid #F1F1F1;
+  border-radius: 8px;
+  width: 700px;
+}
+
+.textarea {
+  background: #F8F8F8;
+  border: 1px solid #F1F1F1;
+  border-radius: 8px;
+  width: 700px;
+  color: #999999;
+}
+
+.textarea:focus-visible {
+  outline: 1px solid #999999;
+}
+
+.textarea-header {
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -0.96px;
+  color: #999999;
+}
+
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.previous-page {
+  cursor: pointer;
+}
+/*# sourceMappingURL=Register.css.map */

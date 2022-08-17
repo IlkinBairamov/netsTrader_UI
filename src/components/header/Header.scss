@@ -1,0 +1,662 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    height: 80px;
+}
+@media (min-width: 991.98px) {
+    main {
+      padding-left: 120px;
+      
+    }
+    .nav-link-sm{
+        display: none !important ;
+    }
+    .login-sm{
+        display: none !important ;
+    }
+    .login-lg{
+        display: flex;
+    }
+    
+  }
+@media (max-width:992px) {
+    .nav-link-sm{
+        display: block ;
+    }
+    .nav-link-lg{
+        display: none !important;
+    }
+    .login-sm{
+        display: flex ;
+    }
+    .login-lg{
+        display: none !important;
+    }
+    .nav-icon-sm{
+        color: black;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+            transition: 0.6s;
+            text-align: center;
+            &:hover{
+                color: white !important;
+                background-color: #D85A54;
+            }
+    }
+}
+
+nav{
+    height: 80px;
+    .navbar-brand{
+        .Net{
+            width: 171px;
+            height: 31px;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 43px;
+            letter-spacing: -0.0264em;
+            margin-right: 10px;
+            }
+            .Trade{
+                font-weight: 300;
+            }
+    }
+    .navbar-brand span{
+        font-weight: 600;
+    }
+    .nav-right{
+        .nav-link{
+            margin: 0 12px;
+        }
+        .notification-btn{
+            line-height: normal;
+            border: none;
+            background-color: white;
+            // &:focus{
+            //     color: white !important;
+            //     background-color: #D85A54;
+            //     svg{
+            //         color: white !important;
+
+            //     }
+            // }
+        }
+        .notification-btn.active{
+            color: white !important;
+                background-color: #D85A54;
+                svg{
+                    color: white !important;
+
+                }
+        }
+        .nav-icon{
+            color: black;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+            transition: 0.6s;
+            text-align: center;
+            &:hover{
+                color: white !important;
+                background-color: #D85A54;
+                svg{
+                    color: white !important;
+
+                }
+            }
+            svg{
+                transition: 0.6s;
+                color: #000000;
+            }
+        }
+        .nav-icon.active{
+            color: white !important;
+                background-color: #D85A54;
+        }
+        .membership{
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: -0.8px;
+            color: #000000;
+            padding-right: 14px !important;
+            padding-left: 14px !important;
+            transition: 1s;
+            height: 40px;
+            line-height: 16px;
+            border-radius: 8px;
+            &:hover{
+                color: white !important;
+                background-color: #D85A54;
+                
+            }
+        }
+        .membership.active{
+            color: white !important;
+            background-color: #D85A54;
+            border-radius: 8px;
+        }
+    }
+    
+}
+.primary-button{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background: #D85A54;
+    border-radius: 10px;
+    color: white !important;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -1.2px;
+    transition: 1.6s;
+    &:hover{
+        background: #c04740;
+    }
+}
+.nav-button{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    color: #333333;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -1.2px; 
+}
+#sidebarMenu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0;
+    width: 240px;
+    z-index: 600;
+}
+#sidebar-item{
+    width: 220px;
+    border-radius: 8px;
+    height: 65px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.8px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    border: none;
+    span{
+        margin-left: 20px;
+        color: #999999;
+    }
+    &:hover{
+        background-color: #D85A54;
+        color: white;
+        span{
+            color: white;
+        }
+        .demandIcon{
+            color: white;
+        }
+    }
+}
+#sidebar-item.active{
+    background-color: #D85A54;
+        color: white;
+        span{
+            color: white;
+        }
+}
+
+main {
+
+    margin-top: 100px;
+    @media (max-width:767px){
+        .demands-header{
+            justify-content: center !important;
+            .inputs{
+                input{
+                    margin-right: 0px !important;
+                }
+            }
+        }
+        .newDemand{
+            justify-content: center !important;
+        }
+
+    }
+    .demands-header{
+        height: auto;
+        background-color: #fafafa;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+
+        .iconVector{
+            border-radius: 50%;
+            background-color: #D85A54;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .inputs{
+           input{
+            background-color: #E5E5E5;
+            border-radius: 8px;
+            width: 200px;
+            height: 64px;
+            border: none;
+            margin-bottom: 10px;
+            margin-right: 16px;
+           }
+        }
+            .demond-button{
+                width: 240px;
+                height: 64px;
+                text-align: center;
+                background: #D85A54;
+                border-radius: 10px;
+                color: white !important;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                letter-spacing: -1.2px;
+                transition: 1.6s;
+                &:hover{
+                    background: #c04740;
+                }
+                border: none;
+        }
+       
+        
+
+        @media (max-width:768px) {
+            .newDemand{
+                 justify-content: start !important
+            }
+        }
+    }
+
+    .secondDiv{
+        padding: 30px;
+        margin: 32px;
+        background: #FAFAFA;
+        border: 1px solid #F0F1F0;
+        border-radius: 8px;
+
+        .incomingMessage{
+            width: 240px;
+            height: 48px;
+            background-color: #F5B15F;
+            border-radius: 5px;
+            border: none;
+            color: #fafafa;
+        }
+        .offers{
+            list-style:none;
+            .icon-div{
+                background-color: #31BF37;
+                width:40px; 
+                height:40px;
+                margin-right: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+            }
+            .money{
+            width: 140px;
+            height: 44px;
+            background: #5A87F1;
+            border-radius: 8px;
+            font-size: 15px;
+            line-height: 22px;
+            color: #fafafa;
+            letter-spacing: -0.8px;
+            margin-top: 15px;
+            }
+        }
+    }
+
+    .createDemand{
+        padding: 32px;
+        background-color: #FDFDFD;
+        .dropdowns button{
+            background-color: #F8F8F8;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+        .detailText{
+            background-color:#fafafa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+   
+    .rightSide{
+        background-color: #FDFDFD;
+    }
+    .leftSide{
+        width: 370px;
+        background-color: #fafafa;
+        padding: 20px;
+        .text1{
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: -1.2px;
+            color: #000000;
+        }
+        .text{
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: -0.4px;
+            color: #999999;
+        }
+        input{
+            width: 338px;
+            height: 64px;   
+            background: #FDFDFD;
+            border: 1px solid #F1F1F1;
+            border-radius: 8px;
+            color: #999999;
+            font-size: 16px;
+            line-height: 18px;
+        }
+        button{
+            background: #D85A54;
+            border-radius: 8px;
+            color: #FAFAFA;
+            border: none;
+            width: 240px;
+            height: 48px;
+        }
+    }
+
+    .FavCompanies{
+        width: 175px;
+        height: 64px;
+        padding: 13px;
+    }
+    .FavAds{
+        width: 175px;
+        height: 64px;
+        padding: 13px;
+    }
+    .favAds{
+        background: #FAFAFA;
+    }
+
+    .companies{
+        width: 150px;
+        height: 150px;
+        background-color: #000000;
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
+        border-radius: 8px;
+    }
+}
+body {
+    background-color: #fbfbfb;
+  }
+  
+
+  .modalOpen{
+      position: absolute;
+      right: 2%;
+      top: 80px;
+      z-index: 999999;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+      
+  }
+  .modalOpen .notification{
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: start;
+    padding: 20px 20px;
+    background: #F9F9F8;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #000000;
+  }
+  
+  .modalOpen .name {
+      margin-top: 5px;
+    width: 125px;
+    height: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.8px;
+    color: #D85A54;
+  }
+  .modalOpen .work{
+    width: 90px;
+    height: 14px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .modalOpen .date{
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.4px;
+    color: #999999;
+  }
+  .modalOpen .notification-info p{
+    margin-bottom: 5px;
+  }
+  .modalOpen .notification-cards{
+    width: 290px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .modalOpen .notification-card{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 20px;
+    background: #F9F9F8;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .modalOpen .card-profile{
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.8px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    background-color: black;
+    color: white;
+  }
+  .modalOpen .primary-button{
+      width: 290px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+      margin: 20px;
+      font-size: 16px;
+  }
+  
+ 
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+   
+  }
+  
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  } 
+  .all-notifications{
+    .notification-list{
+        list-style: none;
+        padding: 50px;
+        .notification-card{
+            width: 100%;
+            height: 90px;
+            margin-bottom: 20px;
+            background: #F9F9F8;
+            border-radius: 8px;
+            padding: 0 30px;
+            .card-profile{
+                border-radius: 50%;
+                width: 56px;
+                height: 56px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: -0.8px;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 20px;
+                background-color: black;
+                color: white;
+              }
+              .notification-info{
+                p{
+                    margin-bottom: 5px;}
+                .name {
+                    margin-top: 5px;
+                  width: 125px;
+                  height: 22px;
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 22px;
+                  letter-spacing: -0.8px;
+                  color: #D85A54;
+                }
+                .work{
+                    width: 90px;
+                    height: 14px;
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+                .date{
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: -0.4px;
+                    color: #999999;
+                }
+              }
+              
+          }
+    }
+   
+  }
+  .edit-modal{
+    width: 300px;
+    background-color: black;
+    top: 60px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08); 
+    .edit-modal-header{
+        border-bottom-width: 2px;
+        padding: 25px 0;
+        text-align: center;
+        border-bottom-color: #999999;
+    }
+    .edit-modal-body{
+        padding: 20px;
+        .edit-modal-btn{
+            padding: 20px 0;
+            text-align: center;
+            border: none;
+            background-color: white;
+            border-radius: 8px ;
+            width: 100%;
+            transition: 0.3s;
+            &:hover{
+                background-color: #D85A54;
+                color: white;
+            }
+        }
+        
+    }
+}
+.keyword-list{
+    display: flex;
+    flex-wrap: wrap;
+    .keyword{
+        display: flex;
+        align-items: center;
+        border: 2px solid #F0F1F0;
+        border-radius: 5px;
+        margin: 15px 10px;
+        height: 45px;
+        padding: 15px;
+        p{
+            margin: 0;
+        }
+        button{
+            color: #999999;
+            margin-left: 15px;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            &:hover{
+                color: #c04740;
+            }
+        }
+    }
+}
+
+.register-button{
+    height: 40px;
+    text-align: center;
+    background: #D85A54;
+    border-radius: 10px;
+    color: white !important;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -1.2px;
+    transition: 1.6s;
+    border: none;
+    &:hover{
+        background: #c04740;
+    }
+}
